@@ -1,0 +1,7 @@
+/.internal
+/build
+.DS_Store
+Thumbs.db
+bob.jar
+manifest.private.der
+manifest.public.der
