@@ -1,1 +1,17 @@
 # extension-resource-encryption
+This extension implements a build time plugin for resource archive encryption and a runtime counterpart to decrypt the archive. The extension uses the same encryption algorithm as in the official Defold source code, but since it can be forked it allows developers to replace the default encryption key with a private project specific key.
+
+## Buildtime plugin for Bob
+https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/pluginsrc/com/dynamo/bob/archive/CustomResourceEncryption.java
+
+## Runtime decryption
+https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/src/plugin.cpp
+
+## Replace the key
+When you fork this repository make sure to change the key in both the buildtime and runtime part of the extension:
+
+* Buildtime: https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/pluginsrc/com/dynamo/bob/archive/CustomResourceEncryption.java#L7
+* Runtime: https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/src/plugin.cpp#L8
+
+## Use your own encryption
+Use this extension as a base to apply your own encryption algorithm to the resource archive. Using custom encryption will add another layer of security as the encryption algorithm will not be know to an attacker.
