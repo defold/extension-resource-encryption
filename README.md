@@ -18,7 +18,7 @@ https://github.com/defold/extension-resource-encryption/blob/master/resourceencr
 When you fork this repository make sure to change the key in both the buildtime and runtime part of the extension:
 
 * Buildtime: https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/pluginsrc/com/dynamo/bob/archive/CustomResourceEncryption.java#L7
-* Runtime: https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/src/plugin.cpp#L8
+* Runtime: https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/src/plugin.cpp#L7
 
 ## Use your own encryption
 Use this extension as a base to apply your own encryption algorithm to the resource archive. Using custom encryption will add another layer of security as the encryption algorithm will not be know to an attacker.
