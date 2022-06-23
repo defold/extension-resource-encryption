@@ -4,11 +4,9 @@ This extension implements a buildtime plugin for resource archive encryption and
 NOTE: The plugin only works when bundling a project using the bob.jar command line tools. It does not work when bundling from the editor.
 
 ## Installation
-To use this library in your Defold project, add the following URL to your `game.project` dependencies:
+To use this library in your Defold project you need to [make a fork of this repository](https://github.com/defold/extension-resource-encryption/fork) and then add the repository archive URL to your `game.project` dependencies. Example (replace `%YOUR_ORG%` with your GitHub user or organisation):
 
-https://github.com/defold/extension-resource-encryption/archive/master.zip
-
-We recommend using a link to a zip file of a [specific release](https://github.com/defold/extension-resource-encryption/releases).
+https://github.com/%YOUR_ORG%/extension-resource-encryption/archive/master.zip
 
 ## Buildtime plugin for Bob
 https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/pluginsrc/com/dynamo/bob/archive/CustomResourceEncryption.java
