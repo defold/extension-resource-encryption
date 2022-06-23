@@ -12,7 +12,7 @@ height = 640
 input_method = HiddenInputField
 
 [project]
-title = sillyencryption
+title = resourceencryption
 
 [library]
 include_dirs = sillyencryption
