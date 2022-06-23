@@ -1,5 +1,7 @@
 # extension-resource-encryption
-This extension implements a build time plugin for resource archive encryption and a runtime counterpart to decrypt the archive. The extension uses the same encryption algorithm as in the official Defold source code, but since it can be forked it allows developers to replace the default encryption key with a private project specific key.
+This extension implements a buildtime plugin for resource archive encryption and a runtime counterpart to decrypt the archive. The extension uses the same encryption algorithm as in the official Defold source code, but since it can be forked it allows developers to replace the default encryption key with a private project specific key.
+
+NOTE: The plugin only works when bundling a project using the bob.jar command line tools. It does not work when bundling from the editor.
 
 ## Installation
 To use this library in your Defold project, add the following URL to your `game.project` dependencies:
