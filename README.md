@@ -16,7 +16,7 @@ https://github.com/%YOUR_ORG%/extension-resource-encryption/archive/master.zip
 The extension consists of two parts:
 
 * Buildtime encryption plugin for Bob - https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/pluginsrc/com/dynamo/bob/archive/CustomResourceEncryption.java
-* Runtime decryption https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/src/plugin.cpp
+* Runtime decryption in the engine - https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/src/plugin.cpp
 
 NOTE: When the buildtime encryption part of the plugin has changed it needs to be compiled and packaged as a .jar file for Bob to use. Run the `build_plugin.sh` script to build the jar file and copy it to the correct location (`resourceencryption/plugins/share/`). The script needs a copy of bob.jar.
 
