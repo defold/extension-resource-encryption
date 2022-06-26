@@ -4,7 +4,7 @@
 
 // change this in your own fork!
 // also change in CustomResourceEncryption.java
-const char* KEY = "%/builtins/fonts";
+const char* KEY = "aQj8CScgNP4VsfXK";
 	
 static dmResourceArchive::Result FooDecrypt(void* buffer, uint32_t buffer_len)
 {
