@@ -19,7 +19,7 @@ The extension consists of two parts:
 NOTE: When the buildtime encryption part of the plugin has changed it needs to be compiled and packaged as a .jar file for Bob to use. Run the `build_plugin.sh` script to build the jar file and copy it to the correct location (`resourceencryption/plugins/share/`). The script needs a copy of bob.jar.
 
 ### Replace the key
-When you [fork of this repository](https://github.com/defold/extension-resource-encryption/fork) make sure to change the key in both the buildtime and runtime part of the extension:
+When you [fork this repository](https://github.com/defold/extension-resource-encryption/fork) make sure to change the key in both the buildtime and runtime part of the extension:
 
 * Buildtime: https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/pluginsrc/com/dynamo/bob/archive/CustomResourceEncryption.java#L7
 * Runtime: https://github.com/defold/extension-resource-encryption/blob/master/resourceencryption/src/plugin.cpp#L7
