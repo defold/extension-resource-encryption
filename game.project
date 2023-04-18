@@ -15,7 +15,7 @@ input_method = HiddenInputField
 title = resourceencryption
 
 [library]
-include_dirs = sillyencryption
+include_dirs = resourceencryption
 
 [input]
 game_binding = /builtins/input/all.input_bindingc
