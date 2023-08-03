@@ -1,24 +1,24 @@
 #include <dmsdk/sdk.h>
 #include <dmsdk/dlib/crypt.h>
-#include <dmsdk/resource/resource_archive.h>
+#include <dmsdk/resource/resource.h>
 
 // change this in your own fork!
 // also change in CustomResourceEncryption.java
 const char* KEY = "aQj8CScgNP4VsfXK";
 	
-static dmResourceArchive::Result FooDecrypt(void* buffer, uint32_t buffer_len)
+static dmResource::Result FooDecrypt(void* buffer, uint32_t buffer_len)
 {
 	dmCrypt::Result cr = dmCrypt::Decrypt(dmCrypt::ALGORITHM_XTEA, (uint8_t*) buffer, buffer_len, (const uint8_t*) KEY, strlen(KEY));
 	if (cr != dmCrypt::RESULT_OK)
 	{
-		return dmResourceArchive::RESULT_UNKNOWN;
+		return dmResource::RESULT_UNKNOWN_ERROR;
 	}
-	return dmResourceArchive::RESULT_OK;
+	return dmResource::RESULT_OK;
 }
 
 static dmExtension::Result AppInitialize(dmExtension::AppParams* params)
 {
-	dmResourceArchive::RegisterResourceDecryption(FooDecrypt);
+	dmResource::RegisterResourceDecryptionFunction(FooDecrypt);
 	return dmExtension::RESULT_OK;
 }
 
